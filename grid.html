@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>GRID</title>
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .container {
+        display: grid;
+
+        grid-template-columns: 2fr 1fr 2fr;
+
+        grid-gap: 5px;
+
+        grid-template-rows: minmax(100px, auto);
+
+        grid-auto-rows: 50px;
+
+        margin-top: 200px;
+        padding: 20px;
+      }
+
+      .item1 {
+        grid-column: 1/3;
+
+        background-color: red;
+      }
+
+      .item2 {
+        background-color: orange;
+      }
+
+      .item4 {
+        grid-column: 2/4;
+
+        background-color: skyblue;
+      }
+
+      .item5 {
+        grid-column: 2/4;
+
+        background-color: skyblue;
+      }
+
+      .item3 {
+        grid-row: 2/4;
+
+        background-color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      style="
+        color: red;
+        text-align: center;
+        border: 2px red solid;
+        width: 30%;
+        border-radius: 20px;
+        margin: 0 auto;
+      "
+    >
+      <p>Click below to navigate to different pages</p>
+      <h1>
+        <a href="index.html" style="color: red">FLEX</a> +
+        <a href="grid.html" style="color: red">GRID</a>
+      </h1>
+    </div>
+    <div class="container">
+      <div class="item1"></div>
+
+      <div class="item2"></div>
+
+      <div class="item3"></div>
+
+      <div class="item4"></div>
+
+      <div class="item5"></div>
+    </div>
+  </body>
+</html>
